@@ -2,7 +2,7 @@
 <header class="main-header">
     <button id="side-menu-toggle">Menu</button>
     <nav class="main-header__nav">
-        <ul class="main-header__item-list">
+        <ul class="main-header__item-list-left">
             <li class="main-header__item">
                 <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
             </li>
@@ -23,7 +23,18 @@
                 <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
                 </a>
             </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/authenticate/register' ? 'active' : '' %>" href="/authenticate/register">Register
+                </a>
+            </li>
         </ul>
+        <div class="main-header__item-right">
+            <li style='list-style: none;' class="main-header__item">
+                <a class="<%= path === '/authenticate/login' ? 'active' : '' %>" href="/authenticate/login">Login
+                </a>
+            </li>
+           
+        </div>
     </nav>
 </header>
 
@@ -47,6 +58,14 @@
                 </li>
                 <li class="mobile-nav__item">
                     <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/authenticate/register' ? 'active' : '' %>" href="/authenticate/register">Register
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/authenticate/login' ? 'active' : '' %>" href="/authenticate/login">Login
                     </a>
                 </li>
             </ul>
