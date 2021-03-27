@@ -5,7 +5,7 @@ let _db;
 
 const mongoConnect = callback => {
   MongoClient.connect(
-    'mongodb+srv://vuhoaiduc:Vuhoaiduc123@dvcluster.40q34.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    'mongodb+srv://vuhoaiduc:Vuhoaiduc123@dvcluster.40q34.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{useUnifiedTopology: true}
   )
     .then(result => {
       console.log('Connected!');
